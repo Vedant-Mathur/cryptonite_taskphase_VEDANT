@@ -28,19 +28,6 @@ This challenge emphasizes the importance of proper syntax in variable assignment
 
 ### Problem:
 - By default, variables set in a shell session are local to that session and are not inherited by child processes. In this challenge, you need to invoke `/challenge/run` with an exported variable `PWN` set to `COLLEGE`, while also setting another variable `COLLEGE` to `PWN` but **not** exporting it.
-
-### Guidelines:
-1. **Exporting Variables**:
-   - To make a variable available to child processes, use the `export` command.
-   - This allows the variable to be passed into the environment of any child processes.
-
-2. **Variable Assignment**:
-   - You can combine the assignment and export in one command: `export VAR=value`.
-
-3. **Case Sensitivity**:
-   - Remember that variable names are case-sensitive. Ensure you use the correct casing for `PWN` and `COLLEGE`.
-
-### Steps:
 1. **Set and Export the Variable**:
    - Assign the value `COLLEGE` to the variable `PWN` and export it.
    
